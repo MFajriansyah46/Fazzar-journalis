@@ -11,6 +11,8 @@ class Post extends Model {
     protected $fillabel = ['title','author','slug','body'];
     protected $casts = ['created_at' => 'datetime'];
 
+    protected $with = ['author','category'];
+
     public function author(): BelongsTo {
         return $this->belongsTo(User::class);
     }
