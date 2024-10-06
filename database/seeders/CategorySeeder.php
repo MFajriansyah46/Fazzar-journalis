@@ -16,32 +16,38 @@ class CategorySeeder extends Seeder
         // Category::factory(4)->create();
         Category::create([
             'name' => 'Basis Data',
-            'slug' => 'basis-data'
+            'slug' => 'basis-data',
+            'color' => 'yellow'
         ]);
 
         Category::create([
             'name' => 'Keamanan Jaringan',
-            'slug' => 'keamanan-jaringan'
+            'slug' => 'keamanan-jaringan',
+            'color' => 'green'
         ]);
 
         Category::create([
             'name' => 'Internet Of Things',
-            'slug' => 'internet-of-things'
+            'slug' => 'internet-of-things',
+            'color' => 'red'
         ]);
 
         Category::create([
             'name' => 'Unreal Engine 5',
-            'slug' => 'unreal-engine-5'
+            'slug' => 'unreal-engine-5',
+            'color' => 'blue'
         ]);
 
         Category::create([
             'name' => 'Framework',
-            'slug' => 'framework'
+            'slug' => 'framework',
+            'color' => 'gray'
         ]);
 
         Category::create([
-            'name' => '10 Teknik Pengambilan Keputusan Paling Populer',
-            'slug' => '10-teknik-pengambilan-keputusan-paling-populer'
+            'name' => 'Teknik Pengambilan Keputusan',
+            'slug' => 'teknik-pengambilan-keputusan',
+            'color' => 'slate'
         ]);
     }
 }
