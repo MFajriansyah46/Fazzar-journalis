@@ -39,7 +39,7 @@
                         <span class="text-sm">{{ $post->created_at->format('d F Y') }}</span>
                     </div>
                     <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="/posts/{{ $post['slug'] }}" class="hover:underline">{{ $post['title'] }}</a>
+                        <a href="/posts/{{ $post->slug }}" class="hover:underline">{{ $post['title'] }}</a>
                     </h2>
                     <p class="mb-5 font-light text-gray-500 dark:text-gray-400">{{ Str::limit($post['body'],160) }}</p>
                     <div class="flex justify-between items-center">
@@ -49,9 +49,7 @@
                                 <span class="font-medium dark:text-white">{{ $post->author->name }}</span>
                             </div>
                         </a>
-                        <a href="/posts/{{ $post->slug }}" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
-                            Read more &raquo;
-                        </a>
+                        <a href="/posts/{{ $post->slug }}" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">Read more &raquo;</a>
                     </div>
                 </article>
             @empty
